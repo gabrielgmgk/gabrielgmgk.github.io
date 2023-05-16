@@ -1,0 +1,30 @@
+.nav{
+  justify-content: center;
+  cursor: pointer;
+  color: $textRed2;
+}
+
+nav .navbar-nav li a{
+  color: $textRed2 !important;
+}
+
+.navbar{
+  a{
+    font-family: geizer !important;
+    font-size: 20px;
+    color: $textRed2;
+  }
+}
+
+.logo{
+  max-width: 100%;
+  width: 350px; 
+  pointer-events: none;
+}
+
+nav{
+  background-color: rgb(166, 166, 166);
+}
+
+
+

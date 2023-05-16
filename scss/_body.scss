@@ -1,0 +1,323 @@
+*{
+  box-sizing: border-box;
+}
+@font-face { 
+  font-family: "Geizer"; 
+  src: url("../fonts/Geizer.otf");}
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
+
+$textRed: rgb(221, 2, 50); 
+$textRed2: rgb(189, 9, 48);
+$space: 1.88rem;
+$bg-grey: rgb(166, 166, 166);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/fondo2.jpg);
+  background-repeat: repeat;
+  text-align: center;
+}
+.textCenter{
+  text-align: center;
+}
+.textRed{
+  color: $textRed;
+}
+.space{
+  padding: $space;
+}
+
+h1{
+  padding: 0.62rem;
+  text-align: center;
+  font-size: 100%;
+}
+
+h2{
+  text-align: center;
+  padding: 0.62rem;
+}
+
+p{ 
+  color: rgb(16, 16, 16);
+  font-weight: 300;
+  font-size: 1.0rem;
+  line-height: 1.88rem;
+  margin-top: auto;
+  padding: 0.25rem;
+  text-align: center;
+}
+@media screen and (max-width:800px) {
+  p{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width:400px) {
+  p{
+    font-size: 0.65rem;
+  }
+}
+
+//index 
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-item {
+  width: 700px;
+  height: 400px;
+  min-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .carousel-item{
+    width: 640px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .carousel-item{
+    width: 450px;
+    height: 200px;
+  }
+  
+}
+
+.pDestacados{
+  display: flex;
+  justify-content: center;
+  gap: 2.8rem;
+  flex-wrap: wrap;
+  .card{
+    h5{
+      text-align: center;
+    }
+    .pDescripcion{
+      height: 150px;
+      max-height: 100%;
+    }
+  }
+}
+
+//productos
+
+.productosLayout{
+  width: 100%;
+  padding: 30px;
+}
+.grupoProductos{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.2rem;
+}
+@media screen and (max-width:1365px) {
+  .grupoProductos{
+    grid-template-columns: repeat(2, 4fr);
+  }
+}
+@media screen and (max-width:800px) {
+  .grupoProductos{
+    grid-template-columns: repeat(1, 5fr);
+  }
+}
+.productosLista{
+  padding: 15px;
+  padding-top: 5px;
+  background-color: rgb(208, 207, 207);
+  border-radius: 1%;
+}
+
+.sectorProductos{
+  max-width: 100%;
+  @media screen and (max-width: 800px) {
+    .producto{
+      padding-left: 0px;
+      padding-bottom: 12px;
+      
+    }
+    
+  }
+  
+}
+.producto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  h5{
+    text-align: center;
+  }
+}
+
+.card{
+  margin: 0 auto;
+  height: 100%;
+  width: 15rem;
+  background-color: rgb(166, 166, 166);
+  .card-body{
+    background-color: $bg-grey;
+  }
+  .botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+  }
+  .card-img-top{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card{
+    width: 12rem;
+    height: 85%;
+  }
+}
+.botones{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  .btn{
+    position: static;
+    width: 100%;
+    max-height: 40px;
+  }
+}
+
+.categorias{
+  width: 100%;
+  background-color: rgb(160, 160, 160);
+  border-radius: 0.5%;
+  height: border-box;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    li{
+      margin: 0;
+      padding: 0;
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+    }    
+  }
+  button{
+    .btn{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .categorias{
+    width: 100px;
+    height: 100%;
+  }
+}
+
+
+//promociones
+
+.table{
+  margin: auto;
+}
+
+.bannerbp{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+@media screen and (max-width: 1000px) {
+  .bannerbp{
+    display: flex;
+    justify-content: center;
+      width: 100%;    
+  }
+}
+
+.cajaCondiciones{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+} 
+@media  screen and (max-width: 800px) {
+  .cajaCondiciones{  
+    min-width: none;
+  }
+}
+
+.condiciones{
+  width: 50%;
+  } 
+@media  screen and (max-width: 1000px) {
+    .condiciones{
+      width: 100%;
+      max-height: fit-content;         
+    }
+      
+}
+
+//nosotros 
+
+.informacion{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  }
+@media screen and (max-width: 800px) {
+.informacion{
+   grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+//contacto
+
+.grupoContacto{
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  
+}
+.formularioContacto{
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  padding: 1.88rem;
+}
+.ubicacion{
+  padding: 3.13rem;
+  width: 80%;
+}
+
+.mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  margin: 0 auto;
+  border-radius: 3%;
+ }
+@media screen and (max-width: 800px){
+  iframe{
+      width: 400px;
+      height: 300px;
+  }
+}
+@media screen and (max-width: 500px){
+  iframe{
+      width: 240px;
+      height: 180px;
+  }
+}
+
+   

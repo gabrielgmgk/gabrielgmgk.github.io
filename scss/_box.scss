@@ -1,0 +1,30 @@
+.box{
+  box-sizing: fit-content;
+  background-color: $bg-grey;
+  height: auto;
+  margin: 0 auto; 
+  padding: 2rem;
+  border-radius: 0.3rem;
+}
+
+.textBox{
+  display: grid;
+  place-items: center;
+  width: auto;
+  background-color: $bg-grey;
+  width: 80%; 
+  height: auto;
+  margin: 0 auto; 
+  margin-bottom: 1.25rem; 
+  margin-top: auto;
+  padding: 1.25rem;
+  border-radius: 0.3rem;
+  font-size: x-large;
+  box-sizing: border-box;
+} 
+@media  screen and (max-width: 900px) {
+  .textBox{
+      font-size: large;
+  }
+  
+}

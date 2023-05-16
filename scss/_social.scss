@@ -1,0 +1,60 @@
+.pie-pagina{
+  font-family: Geizer;
+  width: 100%;
+  background-color: rgb(166, 166, 166);
+  .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+    .s-media{
+      text-align: center;
+      a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(221, 2, 50);
+        margin-right: 10px;
+        background-color: rgb(116, 116, 116);
+        border-radius: 20%;
+        text-align: center;
+        transition: all 300ms ease;
+      }
+      a:hover{
+        color: rgb(33, 32, 32);
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  a{
+    font-size: 30px;
+  }
+}
+
+
+.pie-pagina .grupo-1 .box1 figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
